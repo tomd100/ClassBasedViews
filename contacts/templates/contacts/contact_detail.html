@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <a href="{% url 'contact-list' %}">Back to Contacts</a>
+    <hr>
+    <h1>{{ contact.name }}</h1>
+    <p>{{ contact.email }}</p>
+    <img src="{{ MEDIA_URL }}{{ contact.image }}"/>
+</body>
+</html>
